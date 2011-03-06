@@ -12,6 +12,7 @@ namespace GetModifiedFiles
     public partial class Form1 : Form
     {
         private List<string> _fileList = new List<string>();
+
         public Form1()
         {
             InitializeComponent();
@@ -60,6 +61,7 @@ namespace GetModifiedFiles
         {
             try
             {
+                this.Cursor = Cursors.AppStarting;
                 string folder = this.txtFiles.Text.Trim();
                 if (!this.FillFileList())
                 {
@@ -145,6 +147,7 @@ namespace GetModifiedFiles
             {
                 MessageBox.Show("Woops! something went wrong while creating the folder: \"" + this.txtFiles.Text.Trim() + "\"\n" + exc.Message, "Get Modified Files", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+            this.Cursor = Cursors.Default;
         }
 
         private static void GiveSecurityPermission(string path)

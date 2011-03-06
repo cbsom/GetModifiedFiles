@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnViewFiles = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             this.btnUpload = new System.Windows.Forms.Button();
             this.txtFilestoIgnore = new System.Windows.Forms.TextBox();
-            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.label8 = new System.Windows.Forms.Label();
             this.txtFoldersToIgnore = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -46,9 +46,9 @@
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnCreateFolder = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -87,9 +87,9 @@
             this.btnViewFiles.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnViewFiles.BackColor = System.Drawing.Color.LightSteelBlue;
             this.btnViewFiles.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnViewFiles.ForeColor = System.Drawing.Color.SteelBlue;
+            this.btnViewFiles.ForeColor = System.Drawing.Color.RoyalBlue;
             this.btnViewFiles.Image = global::GetModifiedFiles.Properties.Resources.folder_search;
-            this.btnViewFiles.Location = new System.Drawing.Point(395, 309);
+            this.btnViewFiles.Location = new System.Drawing.Point(263, 309);
             this.btnViewFiles.Name = "btnViewFiles";
             this.btnViewFiles.Size = new System.Drawing.Size(115, 70);
             this.btnViewFiles.TabIndex = 52;
@@ -98,14 +98,26 @@
             this.btnViewFiles.UseVisualStyleBackColor = false;
             this.btnViewFiles.Click += new System.EventHandler(this.btnViewFiles_Click);
             // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Trebuchet MS", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label5.Location = new System.Drawing.Point(3, 385);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(41, 13);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "By C.B.S.";
+            // 
             // btnUpload
             // 
             this.btnUpload.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnUpload.BackColor = System.Drawing.Color.LightSteelBlue;
             this.btnUpload.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnUpload.ForeColor = System.Drawing.Color.SteelBlue;
+            this.btnUpload.ForeColor = System.Drawing.Color.RoyalBlue;
             this.btnUpload.Image = global::GetModifiedFiles.Properties.Resources.computer_network;
-            this.btnUpload.Location = new System.Drawing.Point(526, 309);
+            this.btnUpload.Location = new System.Drawing.Point(394, 309);
             this.btnUpload.Name = "btnUpload";
             this.btnUpload.Size = new System.Drawing.Size(115, 70);
             this.btnUpload.TabIndex = 51;
@@ -121,7 +133,7 @@
             this.txtFilestoIgnore.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFilestoIgnore.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::GetModifiedFiles.Properties.Settings.Default, "ExcludeFiles", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtFilestoIgnore.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFilestoIgnore.ForeColor = System.Drawing.Color.SteelBlue;
+            this.txtFilestoIgnore.ForeColor = System.Drawing.Color.RoyalBlue;
             this.txtFilestoIgnore.Location = new System.Drawing.Point(267, 224);
             this.txtFilestoIgnore.Name = "txtFilestoIgnore";
             this.txtFilestoIgnore.Size = new System.Drawing.Size(508, 23);
@@ -146,7 +158,7 @@
             this.txtFoldersToIgnore.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFoldersToIgnore.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::GetModifiedFiles.Properties.Settings.Default, "ExcludeFolders", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtFoldersToIgnore.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFoldersToIgnore.ForeColor = System.Drawing.Color.SteelBlue;
+            this.txtFoldersToIgnore.ForeColor = System.Drawing.Color.RoyalBlue;
             this.txtFoldersToIgnore.Location = new System.Drawing.Point(267, 162);
             this.txtFoldersToIgnore.Name = "txtFoldersToIgnore";
             this.txtFoldersToIgnore.Size = new System.Drawing.Size(508, 23);
@@ -203,7 +215,7 @@
             this.txtFiles.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFiles.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::GetModifiedFiles.Properties.Settings.Default, "CopyToFolder", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtFiles.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFiles.ForeColor = System.Drawing.Color.SteelBlue;
+            this.txtFiles.ForeColor = System.Drawing.Color.RoyalBlue;
             this.txtFiles.Location = new System.Drawing.Point(25, 102);
             this.txtFiles.Name = "txtFiles";
             this.txtFiles.Size = new System.Drawing.Size(722, 23);
@@ -237,7 +249,7 @@
             this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSearch.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::GetModifiedFiles.Properties.Settings.Default, "SearchFolder", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtSearch.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.ForeColor = System.Drawing.Color.SteelBlue;
+            this.txtSearch.ForeColor = System.Drawing.Color.RoyalBlue;
             this.txtSearch.Location = new System.Drawing.Point(25, 50);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(722, 23);
@@ -248,16 +260,16 @@
             // 
             this.btnCreateFolder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCreateFolder.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnCreateFolder.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCreateFolder.ForeColor = System.Drawing.Color.SteelBlue;
+            this.btnCreateFolder.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCreateFolder.ForeColor = System.Drawing.Color.RoyalBlue;
             this.btnCreateFolder.Image = global::GetModifiedFiles.Properties.Resources.folder_add;
-            this.btnCreateFolder.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCreateFolder.Location = new System.Drawing.Point(657, 309);
+            this.btnCreateFolder.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnCreateFolder.Location = new System.Drawing.Point(625, 281);
             this.btnCreateFolder.Name = "btnCreateFolder";
-            this.btnCreateFolder.Size = new System.Drawing.Size(115, 70);
+            this.btnCreateFolder.Size = new System.Drawing.Size(150, 98);
             this.btnCreateFolder.TabIndex = 40;
-            this.btnCreateFolder.Text = "Copy Changed Files";
-            this.btnCreateFolder.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.btnCreateFolder.Text = "Create Folder";
+            this.btnCreateFolder.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnCreateFolder.UseVisualStyleBackColor = false;
             this.btnCreateFolder.Click += new System.EventHandler(this.btnCreateFolder_Click);
             // 
@@ -281,18 +293,6 @@
             this.label4.Size = new System.Drawing.Size(203, 23);
             this.label4.TabIndex = 15;
             this.label4.Text = "Get Modified Files";
-            // 
-            // label5
-            // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Trebuchet MS", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label5.Location = new System.Drawing.Point(3, 385);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(41, 13);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "By C.B.S.";
             // 
             // label6
             // 

@@ -40,6 +40,7 @@ namespace GetModifiedFiles
         {
             try
             {
+                this.Cursor = Cursors.AppStarting;
                 string[] files = Directory.GetFiles(this.txtFiles.Text);
                 string[] folders = Directory.GetDirectories(this.txtFiles.Text);
                 if (files.Length + folders.Length == 0)
@@ -66,6 +67,7 @@ namespace GetModifiedFiles
                     MessageBoxIcon.Exclamation);
                 this.AddToProgress("File upload failed!" + exc.Message, Color.Red, true);
             }
+            this.Cursor = Cursors.Default;
         }
 
         private void llCancel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

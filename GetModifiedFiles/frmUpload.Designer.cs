@@ -150,7 +150,7 @@
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.txtFiles.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFiles.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFiles.ForeColor = System.Drawing.Color.SteelBlue;
+            this.txtFiles.ForeColor = System.Drawing.Color.RoyalBlue;
             this.txtFiles.Location = new System.Drawing.Point(22, 53);
             this.txtFiles.Name = "txtFiles";
             this.txtFiles.Size = new System.Drawing.Size(666, 23);
@@ -172,9 +172,9 @@
             this.btnViewFiles.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnViewFiles.BackColor = System.Drawing.Color.LightSteelBlue;
             this.btnViewFiles.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnViewFiles.ForeColor = System.Drawing.Color.SteelBlue;
+            this.btnViewFiles.ForeColor = System.Drawing.Color.RoyalBlue;
             this.btnViewFiles.Image = global::GetModifiedFiles.Properties.Resources.folder_search;
-            this.btnViewFiles.Location = new System.Drawing.Point(465, 167);
+            this.btnViewFiles.Location = new System.Drawing.Point(385, 168);
             this.btnViewFiles.Name = "btnViewFiles";
             this.btnViewFiles.Size = new System.Drawing.Size(115, 70);
             this.btnViewFiles.TabIndex = 46;
@@ -187,15 +187,16 @@
             // 
             this.btnUpload.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnUpload.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnUpload.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnUpload.ForeColor = System.Drawing.Color.SteelBlue;
+            this.btnUpload.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpload.ForeColor = System.Drawing.Color.RoyalBlue;
             this.btnUpload.Image = global::GetModifiedFiles.Properties.Resources.computer_network;
-            this.btnUpload.Location = new System.Drawing.Point(596, 167);
+            this.btnUpload.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnUpload.Location = new System.Drawing.Point(545, 142);
             this.btnUpload.Name = "btnUpload";
-            this.btnUpload.Size = new System.Drawing.Size(115, 70);
+            this.btnUpload.Size = new System.Drawing.Size(166, 95);
             this.btnUpload.TabIndex = 45;
             this.btnUpload.Text = "Upload Files";
-            this.btnUpload.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.btnUpload.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnUpload.UseVisualStyleBackColor = false;
             this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
             // 
@@ -204,7 +205,7 @@
             this.txtFTPPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFTPPassword.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::GetModifiedFiles.Properties.Settings.Default, "FtpUserPassword", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtFTPPassword.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFTPPassword.ForeColor = System.Drawing.Color.SteelBlue;
+            this.txtFTPPassword.ForeColor = System.Drawing.Color.RoyalBlue;
             this.txtFTPPassword.Location = new System.Drawing.Point(22, 214);
             this.txtFTPPassword.Name = "txtFTPPassword";
             this.txtFTPPassword.PasswordChar = '*';
@@ -227,7 +228,7 @@
             this.txtFTPUserName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFTPUserName.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::GetModifiedFiles.Properties.Settings.Default, "FtpUserName", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtFTPUserName.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFTPUserName.ForeColor = System.Drawing.Color.SteelBlue;
+            this.txtFTPUserName.ForeColor = System.Drawing.Color.RoyalBlue;
             this.txtFTPUserName.Location = new System.Drawing.Point(22, 159);
             this.txtFTPUserName.Name = "txtFTPUserName";
             this.txtFTPUserName.Size = new System.Drawing.Size(258, 23);
@@ -251,7 +252,7 @@
             this.txtFTP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFTP.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::GetModifiedFiles.Properties.Settings.Default, "FtpURI", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtFTP.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFTP.ForeColor = System.Drawing.Color.SteelBlue;
+            this.txtFTP.ForeColor = System.Drawing.Color.RoyalBlue;
             this.txtFTP.Location = new System.Drawing.Point(22, 107);
             this.txtFTP.Name = "txtFTP";
             this.txtFTP.Size = new System.Drawing.Size(689, 23);
