@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="GetModifiedFiles.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ExcludeFiles" Type="System.String" Scope="User">
+      <Value Profile="(Default)">web.config;pdfFiles;global.asa;PayflowSDK.log;ErrorLog.txt;CharityGift.pdb;Interop.ADODB.dll;Thumbs.db;1800;.suo;vbproj.user</Value>
+    </Setting>
+    <Setting Name="SearchFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Q:\CharityGiftCertificates\Webs</Value>
+    </Setting>
+    <Setting Name="CopyToFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Documents and Settings\Administrator\Desktop\Files</Value>
+    </Setting>
+    <Setting Name="ExcludeFolders" Type="System.String" Scope="User">
+      <Value Profile="(Default)">obj;.svn</Value>
+    </Setting>
+    <Setting Name="FtpURI" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ftp://207.44.255.34/Webs/</Value>
+    </Setting>
+    <Setting Name="FtpUserName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Chaim</Value>
+    </Setting>
+    <Setting Name="FtpUserPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CHA!@#</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
