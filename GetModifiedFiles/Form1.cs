@@ -62,37 +62,38 @@ namespace GetModifiedFiles
             try
             {
                 this.Cursor = Cursors.AppStarting;
-                string folder = this.txtFiles.Text.Trim();
+                DirectoryInfo di = new DirectoryInfo(this.txtFiles.Text.Trim());                
                 if (!this.FillFileList())
                 {
                     return;
                 }
-                if (!Directory.Exists(folder))
+                if (!di.Exists)
                 {
                     try
                     {
-                        Directory.CreateDirectory(folder);
+                        di.Create();                        
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show("Could not create the folder: \"" + folder + "\"\n" + ex.Message,
+                        MessageBox.Show("Could not create the folder: \"" + di.FullName + "\"\n" + ex.Message,
                             "Get Modified Files",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Exclamation);
                         return;
                     }
                 }
-                if (Directory.GetDirectories(folder).Length > 0 || Directory.GetFiles(folder).Length > 0)
+                
+                
+                if (di.GetDirectories().Length > 0 || di.GetFiles().Length > 0)
                 {
                     if (MessageBox.Show("The folder has files in it. To continue all files must be deleted. Do you wish to continue?",
                         "Get Modified Files - Create Folder",
                         MessageBoxButtons.YesNo,
                         MessageBoxIcon.Question,
                         MessageBoxDefaultButton.Button1) == DialogResult.Yes)
-                    {
-                        GiveSecurityPermission(folder);
-                        Directory.Delete(folder, true);
-                        Directory.CreateDirectory(folder);
+                    {                        
+                        di.Delete(true);
+                        di.Create();                        
                     }
                     else
                     {
@@ -135,27 +136,20 @@ namespace GetModifiedFiles
                     fileParts[fileParts.Length - 1] = "";
                     string fileDirectory = string.Join("\\", fileParts);
 
-                    if (!Directory.Exists(folder + "\\" + fileDirectory))
+                    if (!Directory.Exists(di.FullName + "\\" + fileDirectory))
                     {
-                        Directory.CreateDirectory(folder + "\\" + fileDirectory);
+                        Directory.CreateDirectory(di.FullName + "\\" + fileDirectory);
                     }
-                    File.Copy(this.txtSearch.Text + "\\" + file, folder + "\\" + file);
+                    File.Copy(this.txtSearch.Text + "\\" + file, di.FullName + "\\" + file);
                 }
-                System.Diagnostics.Process.Start(folder);
+                System.Diagnostics.Process.Start(di.FullName);
             }
             catch (Exception exc)
             {
                 MessageBox.Show("Woops! something went wrong while creating the folder: \"" + this.txtFiles.Text.Trim() + "\"\n" + exc.Message, "Get Modified Files", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             this.Cursor = Cursors.Default;
-        }
-
-        private static void GiveSecurityPermission(string path)
-        {
-            System.Security.Permissions.FileIOPermission fileIOPerm;
-            fileIOPerm = new System.Security.Permissions.FileIOPermission(System.Security.Permissions.FileIOPermissionAccess.AllAccess, Path.GetFullPath(path));
-            fileIOPerm.AllLocalFiles = System.Security.Permissions.FileIOPermissionAccess.AllAccess;
-        }
+        }       
 
         private bool FillFileList()
         {
