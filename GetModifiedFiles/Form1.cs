@@ -57,6 +57,11 @@ namespace GetModifiedFiles
             Properties.Settings.Default.Save();
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.compute.co.il");
+        }     
+
         private void btnCreateFolder_Click(object sender, EventArgs e)
         {
             try
@@ -188,6 +193,6 @@ namespace GetModifiedFiles
             {
                 this.btnBrowseSearch_Click(null, null);
             }
-        }     
+        }       
     }
 }

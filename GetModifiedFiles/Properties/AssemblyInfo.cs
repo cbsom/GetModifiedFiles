@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("GetModifiedFiles")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Get modified files in folder structure and upload to ftp site")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("C.B. Sommers")]
+[assembly: AssemblyCompany("Compute.co.il")]
 [assembly: AssemblyProduct("GetModifiedFiles")]
-[assembly: AssemblyCopyright("Copyright © C.B. Sommers 2008")]
+[assembly: AssemblyCopyright("Copyright © Compute 2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -29,5 +29,5 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("2.1.0.0")]
+[assembly: AssemblyFileVersion("2.1.0.0")]
