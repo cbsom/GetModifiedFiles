@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("GetModifiedFiles")]
 [assembly: AssemblyDescription("Get modified files in folder structure and upload to ftp site")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Compute.co.il")]
+[assembly: AssemblyCompany("Compute Software Solutions")]
 [assembly: AssemblyProduct("GetModifiedFiles")]
-[assembly: AssemblyCopyright("Copyright © Compute 2012")]
+[assembly: AssemblyCopyright("Copyright © Compute Software Solutions 2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -29,5 +29,5 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("2.1.0.0")]
-[assembly: AssemblyFileVersion("2.1.0.0")]
+[assembly: AssemblyVersion("2.1.1.0")]
+[assembly: AssemblyFileVersion("2.1.1.0")]

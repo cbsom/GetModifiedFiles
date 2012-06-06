@@ -50,6 +50,19 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.0,Profile=Client"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4 Client Profile (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.0,Profile=Client"
+                    }
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Windows.Installer.3.1"
+                    {
+                    "Name" = "8:Windows Installer 3.1"
+                    "ProductCode" = "8:Microsoft.Windows.Installer.3.1"
+                    }
+                }
             }
         }
         "Release"
@@ -74,6 +87,19 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.0,Profile=Client"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4 Client Profile (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.0,Profile=Client"
+                    }
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Windows.Installer.3.1"
+                    {
+                    "Name" = "8:Windows Installer 3.1"
+                    "ProductCode" = "8:Microsoft.Windows.Installer.3.1"
+                    }
+                }
             }
         }
     }
@@ -155,7 +181,7 @@
                 {
                     "{9EF0B969-E518-4E46-987F-47570745A589}:_F2E3E48A9E25494F82B708A08A233F3F"
                     {
-                    "Name" = "8:Compute.co.il"
+                    "Name" = "8:Compute"
                     "AlwaysCreate" = "11:FALSE"
                     "Condition" = "8:"
                     "Transitive" = "11:FALSE"
@@ -181,22 +207,22 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:GetModifiedFiles_Install"
-        "ProductCode" = "8:{8586C280-A2ED-464D-ACD0-84A61C9F0D06}"
-        "PackageCode" = "8:{8ECE4C5F-B582-42A9-B1CD-3DEA20D9F09D}"
+        "ProductName" = "8:Get Modified Files"
+        "ProductCode" = "8:{ED118529-6652-49FD-8856-468BB0EB8690}"
+        "PackageCode" = "8:{83993BCA-AA9D-4DDB-A7B1-853243CBE534}"
         "UpgradeCode" = "8:{5884658E-359E-431D-81A8-C5A77B9872F4}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:2.1.0"
-        "Manufacturer" = "8:Compute.co.il"
+        "ProductVersion" = "8:2.1.1"
+        "Manufacturer" = "8:Compute Software Solutions"
         "ARPHELPTELEPHONE" = "8:732-707-7307"
         "ARPHELPLINK" = "8:http://www.compute.co.il/contact"
         "Title" = "8:GetModifiedFiles_Install"
         "Subject" = "8:"
-        "ARPCONTACT" = "8:CBS - Compute.co.il"
+        "ARPCONTACT" = "8:CBS - Compute Software Solutions"
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:Get modified files in folder structure and upload to ftp site"
         "ARPURLINFOABOUT" = "8:http://www.compute.co.il"
@@ -305,7 +331,7 @@
         {
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_9B2EE6C127BE4E1D99648C7366F3485B"
             {
-            "Name" = "8:Shortcut to Primary output from GetModifiedFiles (Active)"
+            "Name" = "8:Get Modified Files"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
@@ -319,7 +345,7 @@
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_D896E59D0BEF46E2AD87DF1C6EA835E7"
             {
-            "Name" = "8:Shortcut to Primary output from GetModifiedFiles (Active)"
+            "Name" = "8:Get Modified Files"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"

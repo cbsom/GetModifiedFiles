@@ -3,3 +3,5 @@ syntax: glob
 GetModifiedFiles/bin/
 GetModifiedFiles/obj/
 Thumbs.db
+Release/
+Debug/
