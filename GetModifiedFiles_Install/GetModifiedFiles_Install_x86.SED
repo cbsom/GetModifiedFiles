@@ -24,7 +24,7 @@ SourceFiles=SourceFiles
 InstallPrompt=
 DisplayLicense=
 FinishMessage=
-TargetName=D:\Repositories\GetModifiedFiles\GetModifiedFiles_Install\Release\GetModifiedFiles_Install.exe
+TargetName=D:\Insync\cb@compute.co.il\Repositories\GetModifiedFiles\GetModifiedFiles_Install\Release\GetModifiedFiles_Install_32bit.exe
 FriendlyName=Get Modified Files
 AppLaunched=setup.exe
 PostInstallCmd=<None>
@@ -33,7 +33,7 @@ UserQuietInstCmd=
 FILE0="GetModifiedFiles_Install.msi"
 FILE1="setup.exe"
 [SourceFiles]
-SourceFiles0=D:\Repositories\GetModifiedFiles\GetModifiedFiles_Install\Release\
+SourceFiles0=D:\Insync\cb@compute.co.il\Repositories\GetModifiedFiles\GetModifiedFiles_Install\Release\
 [SourceFiles0]
 %FILE0%=
 %FILE1%=

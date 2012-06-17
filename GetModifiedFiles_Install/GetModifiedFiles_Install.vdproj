@@ -175,7 +175,7 @@
         {
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_48746ACAD07B42B6B3F9D7A8D9EB65A4"
             {
-            "DefaultLocation" = "8:[ProgramFiles64Folder][Manufacturer]\\[ProductName]"
+            "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
             "Name" = "8:#1925"
             "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
@@ -267,7 +267,7 @@
         "ARPIconIndex" = "3:32512"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
-        "TargetPlatform" = "3:1"
+        "TargetPlatform" = "3:0"
         "PreBuildEvent" = "8:"
         "PostBuildEvent" = "8:"
         "RunPostBuildEvent" = "3:0"
@@ -795,7 +795,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_8FC694D1DCE141DDBCCB955E9C609096"
             {
-            "SourcePath" = "8:..\\GetModifiedFiles\\obj\\x64\\x64\\GetModifiedFiles.exe"
+            "SourcePath" = "8:..\\GetModifiedFiles\\obj\\Release\\GetModifiedFiles.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_48746ACAD07B42B6B3F9D7A8D9EB65A4"
