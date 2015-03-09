@@ -60,14 +60,15 @@ namespace GetModifiedFiles
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("http://www.compute.co.il");
-        }     
+        }
 
         private void btnCreateFolder_Click(object sender, EventArgs e)
         {
+            var delimiter = new char[] { ';' };
             try
             {
                 this.Cursor = Cursors.AppStarting;
-                DirectoryInfo di = new DirectoryInfo(this.txtFiles.Text.Trim());                
+                DirectoryInfo di = new DirectoryInfo(this.txtFiles.Text.Trim());
                 if (!this.FillFileList())
                 {
                     return;
@@ -76,7 +77,7 @@ namespace GetModifiedFiles
                 {
                     try
                     {
-                        di.Create();                        
+                        di.Create();
                     }
                     catch (Exception ex)
                     {
@@ -87,8 +88,7 @@ namespace GetModifiedFiles
                         return;
                     }
                 }
-                
-                
+
                 if (di.GetDirectories().Length > 0 || di.GetFiles().Length > 0)
                 {
                     if (MessageBox.Show("The folder has files in it. To continue all files must be deleted. Do you wish to continue?",
@@ -96,19 +96,19 @@ namespace GetModifiedFiles
                         MessageBoxButtons.YesNo,
                         MessageBoxIcon.Question,
                         MessageBoxDefaultButton.Button1) == DialogResult.Yes)
-                    {                        
+                    {
                         di.Delete(true);
-                        di.Create();                        
+                        di.Create();
                     }
                     else
                     {
                         return;
                     }
-                }
+                }                
                 foreach (string file in _fileList)
                 {
                     bool isExcluded = false;
-                    foreach (string excluded in this.txtFilestoIgnore.Text.Trim().Split(new char[] { ';' }))
+                    foreach (string excluded in this.txtFilestoIgnore.Text.Trim().Split(delimiter,StringSplitOptions.RemoveEmptyEntries))
                     {
                         if (file.Contains(excluded))
                         {
@@ -118,8 +118,20 @@ namespace GetModifiedFiles
                     }
                     if (!isExcluded)
                     {
+                        foreach (string extension in this.txtFileExtensions.Text.Trim().Split(delimiter, StringSplitOptions.RemoveEmptyEntries))
+                        {
+                            if (Path.GetExtension(file) == (extension.Trim().StartsWith(".") ?
+                                extension.Trim() : "." + extension.Trim()))
+                            {
+                                isExcluded = true;
+                                break;
+                            }
+                        }
+                    }
+                    if (!isExcluded)
+                    {
                         string[] foldersInFilePath = file.Split(new char[] { '\\' });
-                        foreach (string excludedFolder in this.txtFoldersToIgnore.Text.Trim().Split(new char[] { ';' }))
+                        foreach (string excludedFolder in this.txtFoldersToIgnore.Text.Trim().Split(delimiter, StringSplitOptions.RemoveEmptyEntries))
                         {
                             foreach (string folderName in foldersInFilePath)
                             {
@@ -154,7 +166,7 @@ namespace GetModifiedFiles
                 MessageBox.Show("Woops! something went wrong while creating the folder: \"" + this.txtFiles.Text.Trim() + "\"\n" + exc.Message, "Get Modified Files", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             this.Cursor = Cursors.Default;
-        }       
+        }
 
         private bool FillFileList()
         {
@@ -193,6 +205,6 @@ namespace GetModifiedFiles
             {
                 this.btnBrowseSearch_Click(null, null);
             }
-        }       
+        }
     }
 }
