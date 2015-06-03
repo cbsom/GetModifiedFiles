@@ -3,25 +3,28 @@
   <Profiles />
   <Settings>
     <Setting Name="ExcludeFiles" Type="System.String" Scope="User">
-      <Value Profile="(Default)">web.config;pdfFiles;global.asa;PayflowSDK.log;ErrorLog.txt;CharityGift.pdb;Interop.ADODB.dll;Thumbs.db;1800;.suo;vbproj.user</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="SearchFolder" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Q:\CharityGiftCertificates\Webs</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="CopyToFolder" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\Documents and Settings\Administrator\Desktop\Files</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="ExcludeFolders" Type="System.String" Scope="User">
-      <Value Profile="(Default)">obj;.svn</Value>
+      <Value Profile="(Default)">obj;.svn;.hg</Value>
     </Setting>
     <Setting Name="FtpURI" Type="System.String" Scope="User">
-      <Value Profile="(Default)">ftp://207.44.255.34/Webs/</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="FtpUserName" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Chaim</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="FtpUserPassword" Type="System.String" Scope="User">
-      <Value Profile="(Default)">CHA!@#</Value>
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ExcludeExtensions" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.asa;.asax;.log;.pdb;.db;.suo;.user;.csproj;vbproj.sln;.vb;.cs</Value>
     </Setting>
   </Settings>
 </SettingsFile>
