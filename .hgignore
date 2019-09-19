@@ -1,7 +1,0 @@
-syntax: glob
-*.suo
-GetModifiedFiles/bin/
-GetModifiedFiles/obj/
-Thumbs.db
-Release/
-Debug/
