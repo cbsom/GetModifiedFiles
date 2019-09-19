@@ -5,3 +5,5 @@ GetModifiedFiles/obj/
 Thumbs.db
 Release/
 Debug/
+.vs/
+.vscode/
